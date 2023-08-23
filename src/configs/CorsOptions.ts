@@ -1,4 +1,5 @@
 import allowedOrigin from "./AllowedOrigins";
+
 const corsOption: any = {
     origin: function (origin: string, callback: any) {
         if (allowedOrigin.indexOf(origin) !== -1 || !origin) {
