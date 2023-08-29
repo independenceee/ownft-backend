@@ -8,6 +8,7 @@ class InformationsController {
      * @description GET INFORMATION ASSETS
      * @param request { body: { assetName: require, policyId: require } }
      * @param response
+     * @returns 
      */
     async getAllInformationAssets(request: Request, response: Response) {
         try {
