@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
-import apiBlockfrost from "../utils/blockfrost";
+import apiBlockfrost from "../../utils/blockfrost";
 
 class OwnerShipController {
     async getMintedAssets(request: Request, response: Response) {

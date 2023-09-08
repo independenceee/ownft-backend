@@ -1,5 +1,5 @@
 import { Router } from "express";
-import informationsController from "../controllers/Infomations.controller";
+import informationsController from "../../controllers/blockfrost/Infomations.controller";
 
 const router = Router();
 

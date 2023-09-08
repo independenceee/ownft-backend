@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import apiBlockfrost from "../utils/blockfrost";
+import apiBlockfrost from "../../utils/blockfrost";
 import { StatusCodes } from "http-status-codes";
 
 class TransactionController {

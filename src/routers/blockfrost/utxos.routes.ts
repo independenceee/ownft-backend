@@ -1,5 +1,5 @@
 import { Router } from "express";
-import UTXOSController from "../controllers/UTXO.controller";
+import UTXOSController from "../../controllers/blockfrost/UTXO.controller";
 const router = Router();
 
 router.route("/").post(UTXOSController.getUTXOs);
