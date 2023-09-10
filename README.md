@@ -5,7 +5,7 @@
 -   information -- blockfrost koios => OK
 -   history -- assets, account => OK
 -   transactions => OK
--   utxo => OK
+-   utxo => OK => OK
 -   all-assets => OK
 -   policyId => OK
 
