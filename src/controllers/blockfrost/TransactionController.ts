@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import apiBlockfrost from "../../utils/blockfrost";
-import stringToHex from "../../utils/convertToHex";
+import stringToHex from "../../helpers/convertToHex";
 import { StatusCodes } from "http-status-codes";
 
 class TransactionController {

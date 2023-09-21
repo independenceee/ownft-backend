@@ -1,11 +1,9 @@
 import { StatusCodes } from "http-status-codes";
 import { Request, Response } from "express";
-import stringToHex from "../../utils/convertToHex";
+import stringToHex from "../../helpers/convertToHex";
 import apiBlockfrost from "../../utils/blockfrost";
 
 class AssetsController {
-    
-
     async getAllAssetsFromAddress(request: Request, response: Response) {
         const { stakeAddress } = request.body;
         const data = await apiBlockfrost.accountsAddressesAssets(stakeAddress);

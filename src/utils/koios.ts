@@ -2,19 +2,20 @@ import axios from "axios";
 import * as dotenv from "dotenv";
 
 dotenv.config();
-const httpRequest = axios.create({
+const instants = axios.create({
     baseURL: process.env.KOIOS_RPC_URL!,
+    withCredentials: true,
 });
 
 const get = async function (path: string, options: any) {
-    const response = await httpRequest.get(path, options);
+    const response = await instants.get(path, options);
     return response.data;
 };
 
 const post = async function (path: string, options: any) {
-    const response = await httpRequest.post(path, options);
+    const response = await instants.post(path, options);
     return response.data;
 };
 
 export { get, post };
-export default httpRequest;
+export default instants;

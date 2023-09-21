@@ -1,7 +1,7 @@
 import { StatusCodes } from "http-status-codes";
 import { Request, Response } from "express";
 import { get } from "../../utils/koios";
-import stringToHex from "../../utils/convertToHex";
+import stringToHex from "../../helpers/convertToHex";
 
 class AssetsController {
     async assetNftAddress(request: Request, response: Response) {
